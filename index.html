@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/icons8-todo-list-16.png">
+    <link rel="stylesheet" href="/static/style.css">
+    
+    <title> To Do list </title>
+</head>
+<body>
+    <div id="content">
+    <p id="title"> </p>
+    </div>
+    <h1> To-Do List </h1>
+    <a href="/notes">View List</a>
+    <form action="/add" method="get">
+        <input type="text" name="a" placeholder = "Add your item.. " id="note-add" class = "box2" required> 
+        <input type="text" name="d" id="desc" placeholder="Write a brief description.." required>
+        <input type="datetime-local" name="due" itemid="dateTime"  required>
+        <input type="submit" id= "addBtn" value="Add"> </form>
+
+        <form action="/search" method="get">
+            <input type="date" name="q" placeholder = "Search your to do list.. " id="note-search" class = "box" required>
+            <input type="submit" value="Search" required> </form>
+
+    <script src="static/app.js"></script>
+</body>
+</html>
